@@ -1,8 +1,6 @@
 body {
-  
-
-  background: black;
-  color: white;
+  color: #000;
+  font-size: 24px;
 }
 
 .welcome {

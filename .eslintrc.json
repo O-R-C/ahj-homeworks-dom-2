@@ -2,7 +2,7 @@
   "plugins": ["prettier"],
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
   "env": {
-    "es6": true,
+    "es9": true,
     "browser": true,
     "jest/globals": true
   },
@@ -10,14 +10,17 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "prettier/prettier": ["error",{
+      "endOfLine": "auto"}
+    ] 
   },
   "overrides": [
     {
       "files": ["**/*.test.js"],
       "plugins": ["jest"],
       "extends": ["plugin:jest/recommended"],
-      "rules": { "jest/prefer-expect-assertions": "off" }
+      "rules": { "jest/prefer-expect-assertions": "off"}
     }
   ]
 }

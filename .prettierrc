@@ -6,5 +6,19 @@
   "trailingComma": "es5",
   "jsxBracketSameLine": false,
   "parser": "flow",
-  "semi": false
+  "semi": false,
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ],
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "css"
+      }
+    }
+  ]
 }
