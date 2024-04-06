@@ -1,5 +1,9 @@
+.container {
+  width: 100%;
+}
+
 .table {
-  width: 800px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
 
@@ -12,22 +16,49 @@
 
 .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
   padding: 20px;
 
   border: 1px solid rgb(162, 162, 162);
-  box-shadow: 2px 2px 2px 2px rgba(227, 227, 227, 1);
+  box-shadow: 2px 2px 4px 4px rgba(227, 227, 227, 1);
 }
 
 .cell {
-  width: 15%;
+  flex: 0 0 17%;
+}
+
+.id,
+.year,
+.imdb {
+  width: inherit;
 }
 
 .title {
-  width: 55%;
+  flex: 0 0 40%;
 }
 
 .headers {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.up,
+.down {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.up::after,
+.down::after {
+  content: ' \2191';
+  color: red;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.down::after {
+  content: ' \2193';
 }
