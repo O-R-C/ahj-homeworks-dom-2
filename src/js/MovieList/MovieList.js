@@ -176,7 +176,7 @@ export default class MovieList {
     let index = 0
     const length = this.headers.length
 
-    const interval = setInterval(() => {
+    setInterval(() => {
       this.deleteClassArrows(cellsHeaders)
 
       const title = this.headers[index]
